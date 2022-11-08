@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <!--This is the project file-->
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>core_mvc_web</RootNamespace>
+  </PropertyGroup>
+
+  <!--Packages will be listed here.-->
+
+</Project>
