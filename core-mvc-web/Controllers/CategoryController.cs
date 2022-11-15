@@ -38,6 +38,12 @@ namespace core_mvc_web.Controllers
         //above is for CSRF
         public IActionResult Create(Category obj)
         {
+            if (obj.Name == obj.DisplayOrder.ToString())
+            {
+                //By using the key of Name, the error will be associated with the name input.
+                //This is linked using the tag helpers in the Create (view) file.
+                ModelState.AddModelError("Name", "The Display Order cannot exactly match the Name.");
+            }
             if (ModelState.IsValid)
             {
                 _db.Categories.Add(obj);

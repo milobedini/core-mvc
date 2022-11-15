@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 //Note the above to allow data annotaions, Key.
 
@@ -16,9 +17,11 @@ namespace core_mvc_web.Models
         [Required]
         public string Name { get; set; }
 
+        [DisplayName("Display Order")]
         public int DisplayOrder { get; set; }
 
-        //Below to automatically use the current date time.
+        //Below to automatically use the current date time. And to apply range 1st.
+        [Range(1, 100, ErrorMessage = "Display order must be between 1-100")]
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;
     }
 }

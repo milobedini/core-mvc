@@ -7,6 +7,7 @@
             <div class="row pb-2">
                 <h2 class="text-primary">Create Category</h2>
             </div>
+            <div asp-validation-summary="All"></div>
             <div class="mb-3">
                 <label asp-for="Name"></label>
                 <input asp-for="Name" class="form-control" />
@@ -21,6 +22,15 @@
             <a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width:150px">Back to list</a>
         </div>
     </form>
+
+    //The below is to enable the Partial class for validation scripts to be enabled for client side validation.
+    //The request will never reach the server side (controller) now. Better practice.
+    @section Scripts{
+        @{
+
+            <partial name="_ValidationScriptsPartial" />
+        }
+    }
 
 }
 
