@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nSgCClfpA7qizp0A+xvWpbSeomdrRckaX9boHsuNh2o=",
+  "Hash": "62THxanBkqXjYEXvghooxpNZ/cJKvelMctR+H4IL0DM=",
   "Source": "core-mvc-web",
   "BasePath": "_content/core-mvc-web",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/milobedini/Documents/git/dotnet/core-mvc/core-mvc-web/obj/Debug/net6.0/scopedcss/projectbundle/core-mvc-web.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/milobedini/Documents/git/dotnet/core-mvc/core-mvc-web/wwwroot/css/bootswatchTheme.css",
+      "SourceId": "core-mvc-web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/milobedini/Documents/git/dotnet/core-mvc/core-mvc-web/wwwroot/",
+      "BasePath": "_content/core-mvc-web",
+      "RelativePath": "css/bootswatchTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/bootswatchTheme.css"
     },
     {
       "Identity": "/Users/milobedini/Documents/git/dotnet/core-mvc/core-mvc-web/wwwroot/css/site.css",

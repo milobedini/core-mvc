@@ -25,5 +25,22 @@ namespace core_mvc_web.Controllers
             IEnumerable<Category> objCategoryList = _db.Categories.ToList();
             return View(objCategoryList);
         }
+
+        //GET for add category view
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        //POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        //above is for CSRF
+        public IActionResult Create(Category obj)
+        {
+            _db.Categories.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
