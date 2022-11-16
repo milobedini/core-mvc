@@ -18,10 +18,10 @@ namespace core_mvc_web.Models
         public string Name { get; set; }
 
         [DisplayName("Display Order")]
-        public int DisplayOrder { get; set; }
-
         //Below to automatically use the current date time. And to apply range 1st.
         [Range(1, 100, ErrorMessage = "Display order must be between 1-100")]
+        public int DisplayOrder { get; set; }
+
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;
     }
 }
