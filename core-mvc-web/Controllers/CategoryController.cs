@@ -20,6 +20,8 @@ namespace core_mvc_web.Controllers
 
         }
 
+        //Views - client side
+
         public IActionResult Index()
         {
             IEnumerable<Category> objCategoryList = _db.Categories.ToList();
@@ -72,6 +74,17 @@ namespace core_mvc_web.Controllers
             return View(categoryFromDb);
         }
 
+
+
+
+
+        //ACTIONS - server side
+
+
+
+
+
+
         //POST for add category action.Changes DB and then redirects.
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -88,6 +101,9 @@ namespace core_mvc_web.Controllers
             {
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
+                //Create temporary data that disappears on refreshing. Sort of similar to useState?
+                //Extracted within index view.
+                TempData["success"] = "Category created successfully";
                 return RedirectToAction("Index");
             }
             else
@@ -111,6 +127,7 @@ namespace core_mvc_web.Controllers
             {
                 _db.Categories.Update(obj);
                 _db.SaveChanges();
+                TempData["success"] = "Category edited successfully";
                 return RedirectToAction("Index");
             }
             else
@@ -119,7 +136,9 @@ namespace core_mvc_web.Controllers
             }
         }
 
-        [HttpPost]
+
+        //Delete
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult Delete(Category obj)
         {
@@ -128,6 +147,7 @@ namespace core_mvc_web.Controllers
             {
                 _db.Categories.Remove(obj);
                 _db.SaveChanges();
+                TempData["success"] = "Category deleted successfully";
                 return RedirectToAction("Index");
             }
             else
