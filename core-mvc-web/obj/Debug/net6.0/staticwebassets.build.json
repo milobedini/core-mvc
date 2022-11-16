@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "62THxanBkqXjYEXvghooxpNZ/cJKvelMctR+H4IL0DM=",
+  "Hash": "ckDe8FeHNBJwMOImDVeZCzUu+1U5ubugHKLtbdn2RQ8=",
   "Source": "core-mvc-web",
   "BasePath": "_content/core-mvc-web",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
+    },
+    {
+      "Identity": "/Users/milobedini/Documents/git/dotnet/core-mvc/core-mvc-web/wwwroot/lib/.DS_Store",
+      "SourceId": "core-mvc-web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/milobedini/Documents/git/dotnet/core-mvc/core-mvc-web/wwwroot/",
+      "BasePath": "_content/core-mvc-web",
+      "RelativePath": "lib/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/.DS_Store"
     },
     {
       "Identity": "/Users/milobedini/Documents/git/dotnet/core-mvc/core-mvc-web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
@@ -1018,6 +1035,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Identity": "/Users/milobedini/Documents/git/dotnet/core-mvc/core-mvc-web/wwwroot/lib/jquery/.DS_Store",
+      "SourceId": "core-mvc-web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/milobedini/Documents/git/dotnet/core-mvc/core-mvc-web/wwwroot/",
+      "BasePath": "_content/core-mvc-web",
+      "RelativePath": "lib/jquery/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/jquery/.DS_Store"
     },
     {
       "Identity": "/Users/milobedini/Documents/git/dotnet/core-mvc/core-mvc-web/wwwroot/lib/jquery/dist/jquery.js",
